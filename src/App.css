@@ -1,38 +1,191 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  max-width: 100%;
+  height: 100vh;
+  background: #fff;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.login-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  margin-top: 8rem;
+}
+.login-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 350px;
+  height: 400px;
+  background: #fff;
+  line-height: 3;
+  border: 1px solid #ccc;
+}
+.signup{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 350px;
+  background: #fff;
+  line-height: 4;
+  border: 1px solid #ccc;
+  margin-top: 0.5rem;
+}
+.signup p a{
+  color: #0095F6;
+  font-weight: bold;
+}
+.signup p{
+  font-size: 14px;
+  color: #000;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.form-login{
+  background-color: #FAFAFA;
+  width: 268px;
+  margin: 5px;
+  height: 38px;
+  padding: 5px;
+  border-radius: 2.3px;
+  border: 1px solid #ccc;
+}
+.form-submit-btn{
+  background-color: #0095F6;
+  width: 268px;
+  margin: 5px;
+  height: 32px;
+  padding: 5px;
+  border-radius: 7.5px;
+  color: #fff;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+}
+.form-submit-btn:hover{
+  background-color: #1877F2;
+  cursor: pointer;
+}
+.or-span{
+  position: relative;
+  color: #737373;
+  margin: 0px 18px;
+  width: 268px;
+  font-size: 13px;
+}
+.or-span::after{
+  content: "";
+  position: absolute; 
+  top: 20px;
+  right: 0;
+  display: block;
+  width: 107px;
+  height: 1px;
+  background-color: #DBDBDB;
+}
+.or-span::before{
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: block;
+  width: 107px;
+  height: 1px;
+  background-color: #DBDBDB;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.login-logo{
+  width: 175px!important;
+  height: 140px;
+}
+
+  .login-with-facebook{
+    display: flex;
+    flex-direction: row;
+    background: none;
+    border: none;
+    outline: none;
   }
-  to {
-    transform: rotate(360deg);
+  .login-with-facebook a{
+    color: #385185;
   }
+  .login-container img{
+    padding-right: 5px;
+  }
+
+.forgot-password a{
+  font-size: 12px;
+  color: #00376B;
+  margin: 12px 0px 0px;
+}
+.get-the-app{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 268px;
+  gap: 10px;
+}
+.get-app{
+  color: #000;
+  font-size: 14px;
+}
+
+.app-store, .google-play{
+  width: 134px;
+}
+
+.app-store img, .google-play img{
+  width: 100%;
+}
+.footer-container{
+  display: flex;
+  position: relative;
+  bottom: 55px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.footer-links{
+  display: flex;
+  flex-direction: row;
+}
+.footer-links li{
+  list-style: none;
+  margin: 0px 5px;
+}
+.footer-links li a{
+  font-size: 12px;
+  color: #737373;
+}
+.footer-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #737373;
+  font-size: 12px;
+  gap: 25px;
+  margin-top: 30px;
 }
