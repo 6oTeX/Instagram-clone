@@ -1,9 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-a{
+a {
   text-decoration: none;
 }
 
@@ -11,22 +13,20 @@ a{
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
   max-width: 100%;
-  height: 100vh;
+  height: 100%;
   background: #fff;
   color: white;
 }
-.login-container{
+.login-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   height: 100%;
-  margin-top: 8rem;
+  margin-top: 20px;
 }
-.login-content{
+.login-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -36,8 +36,9 @@ a{
   background: #fff;
   line-height: 3;
   border: 1px solid #ccc;
+  margin-top: 25px;
 }
-.signup{
+.signup {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -46,23 +47,32 @@ a{
   background: #fff;
   line-height: 4;
   border: 1px solid #ccc;
-  margin-top: 0.5rem;
+  margin-top: 25px;
 }
-.signup p a{
-  color: #0095F6;
+.signup p a {
+  color: #0095f6;
   font-weight: bold;
 }
-.signup p{
+.signup p {
   font-size: 14px;
   color: #000;
 }
-.form-group{
+.form-group {
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
-.form-login{
-  background-color: #FAFAFA;
+.form-group input {
+  padding-left: 10px;
+}
+.form-group ::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+.form-login {
+  background-color: #fafafa;
   width: 268px;
   margin: 5px;
   height: 38px;
@@ -70,8 +80,8 @@ a{
   border-radius: 2.3px;
   border: 1px solid #ccc;
 }
-.form-submit-btn{
-  background-color: #0095F6;
+.form-submit-btn {
+  background-color: #0095f6;
   width: 268px;
   margin: 5px;
   height: 32px;
@@ -82,103 +92,110 @@ a{
   outline: none;
   border: none;
 }
-.form-submit-btn:hover{
-  background-color: #1877F2;
+.form-submit-btn:hover {
+  background-color: #1877f2;
   cursor: pointer;
 }
-.or-span{
+.or-span {
   position: relative;
   color: #737373;
   margin: 0px 18px;
   width: 268px;
   font-size: 13px;
+  font-weight: 500;
 }
-.or-span::after{
+.or-span::after {
   content: "";
-  position: absolute; 
-  top: 20px;
+  position: absolute;
+  top: 20.5px;
   right: 0;
   display: block;
   width: 107px;
-  height: 1px;
-  background-color: #DBDBDB;
+  height: 2px;
+  background-color: #dbdbdb;
 }
-.or-span::before{
+.or-span::before {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 20.5px;
   left: 0;
   display: block;
   width: 107px;
-  height: 1px;
-  background-color: #DBDBDB;
+  height: 2px;
+  background-color: #dbdbdb;
 }
 
-.login-logo{
-  width: 175px!important;
-  height: 140px;
+.login-header {
+  padding-top: 35px;
 }
 
-  .login-with-facebook{
-    display: flex;
-    flex-direction: row;
-    background: none;
-    border: none;
-    outline: none;
-  }
-  .login-with-facebook a{
-    color: #385185;
-  }
-  .login-container img{
-    padding-right: 5px;
-  }
+.login-logo {
+  width: 200px;
+}
 
-.forgot-password a{
+.login-with-facebook {
+  display: flex;
+  flex-direction: row;
+  background: none;
+  border: none;
+  outline: none;
+}
+.login-with-facebook a {
+  color: #385185;
+}
+.login-container img {
+  padding-right: 5px;
+}
+
+.forgot-password a {
   font-size: 12px;
-  color: #00376B;
+  color: #00376b;
   margin: 12px 0px 0px;
 }
-.get-the-app{
+.get-the-app {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 268px;
   gap: 10px;
 }
-.get-app{
+.get-app {
   color: #000;
   font-size: 14px;
 }
 
-.app-store, .google-play{
+.app-store,
+.google-play {
   width: 134px;
 }
 
-.app-store img, .google-play img{
+.app-store img,
+.google-play img {
   width: 100%;
+  height: 40px;
 }
-.footer-container{
+.footer-container {
   display: flex;
   position: relative;
-  bottom: 55px;
+  bottom: -225px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.footer-links{
+.footer-links {
   display: flex;
   flex-direction: row;
 }
-.footer-links li{
+.footer-links li {
   list-style: none;
-  margin: 0px 5px;
+  margin: 0px 8px;
 }
-.footer-links li a{
+.footer-links li a {
   font-size: 12px;
   color: #737373;
 }
-.footer-bottom{
+.footer-bottom {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -187,5 +204,114 @@ a{
   color: #737373;
   font-size: 12px;
   gap: 25px;
-  margin-top: 30px;
+  margin: 25px 0 25px 0;
+}
+
+#language {
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  width: 62px;
+  color: #737373;
+  outline: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.register-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  margin-top: 5px;
+}
+.register-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 350px;
+  height: 650px;
+  background: #fff;
+  line-height: 3;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.register-header {
+  padding-top: 35px;
+}
+
+.register-logo {
+  width: 190px;
+}
+
+.form-register {
+  background-color: #fafafa;
+  width: 268px;
+  margin: 5px;
+  height: 38px;
+  padding: 5px;
+  border-radius: 2.3px;
+  border: 1px solid #ccc;
+}
+
+.register-info {
+  width: 275px;
+  line-height: 1.2;
+  font-size: 12px;
+  color: #737373;
+  margin: 10px 0px 20px 0px;
+}
+.register-info p {
+  width: 220px !important;
+}
+.register-info span {
+  color: #00376b;
+  font-weight: 400;
+}
+
+.form-submit-btn {
+  background-color: #0095f6;
+  width: 268px;
+  margin: 5px;
+  height: 32px;
+  padding: 5px;
+  border-radius: 7.5px;
+  color: #fff;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+}
+.header-2 {
+  color: #737373;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0 40px 10px;
+  text-align: center;
+}
+.register-with-facebook {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 268px;
+  background: #0095f6;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 8px;
+  border-radius: 7.5px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.register-with-facebook img {
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+}
+.register-with-facebook a {
+  color: #fff;
 }
